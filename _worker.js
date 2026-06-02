@@ -429,7 +429,7 @@ async function getSUB(api, request, 追加UA, userAgentHeader) {
 				} else if (isValidBase64(content)) {
 					newapi += base64Decode(content) + '\n'; // 解码并追加内容
 				} else {
-					const 异常订阅LINK = `trojan://CMLiussss@127.0.0.1:8888?security=tls&allowInsecure=1&type=tcp&headerType=none#%E5%BC%82%E5%B8%B8%E8%AE%A2%E9%98%85%20${response.apiUrl.split('://')[1].split('/')[0]}`;
+					const 异常订阅LINK = `trojan://CMLiussss@127.0.0.1:8888?security=tls&allowInsecure=0&type=tcp&headerType=none#%E5%BC%82%E5%B8%B8%E8%AE%A2%E9%98%85%20${response.apiUrl.split('://')[1].split('/')[0]}`;
 					console.log(异常订阅LINK);
 					异常订阅 += `${异常订阅LINK}\n`;
 				}
